@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Portfolio Template
 
-## Getting Started
+_Estimated reading time: 3 minutes_
 
-First, run the development server:
+Multi-themed portfolio that will greatly increase your chances of getting attention from recruiters.
 
-```bash
-npm run dev
-# or
+## Features
+
+- 🎁 Modern stack – Template created using the latest features of React and Next.js
+- 🏷 TypeScript support – Project is written in TypeScript to improve the DX
+- 🚀 Fast – Buttery smooth experience thanks to the implementation of best practices and dynamic rendering, resulting in PERFECT Google Lighthouse scores
+- 💻 Responsive – Highly responsive and reusable UI components
+- 🤖 Animated - You'll find page transitions, progress bars and suttle but smooth animations across the project
+
+## Prerequisities
+
+You’ll need to have Node 10.16.0 or later version on your local development machine (but it’s not required on the server). I recommend using the latest LTS version.
+
+## Step 1: Setup
+
+Install the dependancies for this project.
+
+```sh
+cd portfolio
+yarn install
+```
+
+Start a Node development server.
+
+```sh
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will open in your browser at http://localhost:3000
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Step 2: Create an .env file
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+In this step, you will have to create an `.env` file at the root of the directory, so that you can provide your environment variables.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Variables
 
-## Learn More
+The environment variables you define here are used for Spotify's API. GitHub and Medium are open access so you don't have to worry about providing those values.
 
-To learn more about Next.js, take a look at the following resources:
+- `SPOTIFY_CLIENT_ID`
+- `SPOTIFY_CLIENT_SECRET`
+- `SPOTIFY_REFRESH_TOKEN`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+In order to learn more about spotify integration and how to generate these values, please head over to [Spotify dashboard] and create a new app.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Step 3: Changing GitHub and Medium URL
 
-## Deploy on Vercel
+Although, you don't have to provide environment variables for these two, you still will need to change their url so that they can point to your account.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You can make these changes inside the `pages/api` folder.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Credits
+
+Credits to [Lee Rob] and his [personal portfolio], for inspiring me to create this project.
+
+## Contact
+
+If you have any issues setting up this portfolio project, please reach out to me on my [twitter].
+
+[spotify dashboard]: https://developer.spotify.com/dashboard/
+[lee rob]: https://twitter.com/leeerob
+[personal portfolio]: https://leerob.io/
+[twitter]: https://twitter.com/adrinlolx
